@@ -201,6 +201,9 @@ h2{
   opacity: 0.8;
   color: #0ff;
   z-index: -1;
+
+  -webkit-animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 5;
+          animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 5;
 }
 .glitch:after {
   display: block;
@@ -214,7 +217,10 @@ h2{
   opacity: 0.8;
   color: #f0f;
   z-index: -2;
+
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both 5;
 }
+/**
 .glitch:hover:before {
   -webkit-animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 5;
           animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 5;
@@ -222,7 +228,7 @@ h2{
 .glitch:hover:after {
   animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both 5;
 }
-
+**/
 @media only screen and (max-width: 400px) {
   .glitch {
     font-size: 3em;
