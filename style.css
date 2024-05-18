@@ -189,7 +189,7 @@ h2{
   color: #fff;
   letter-spacing: 5px;
 }
-.glitch:before, .glitch:after {
+.glitch:before {
   display: block;
   content: attr(data-glitch);
   text-transform: uppercase;
@@ -201,6 +201,15 @@ h2{
   opacity: 0.8;
 }
 .glitch:after {
+  display: block;
+  content: attr(data-glitch);
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
   color: #f0f;
   z-index: -2;
 }
